@@ -1,20 +1,135 @@
 .header {
+  block-size: 1070px;
+  padding: 0;
+  margin: 0;
+  position: relative;
   background-image: url('../images/MG.png');
   background-size: cover;
-  margin-block-start: 24px;
-  margin-block-end: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header .logo {
+  padding-block-start: 24px;
   text-align: center;
 }
 
-.header-title {
-  border: 1px solid red;
-  font: var(--headline1);
+.header .nav {
+  font: var(--navfont);
+}
+
+.nav li a {
   color: var(--dark);
+  text-decoration: none;
+}
+
+.nav ul {
+  display: flex;
   padding-inline-start: 24px;
   padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  gap: 38px;
+  justify-content: space-around;
+  list-style: none;
+  /* padding: 24px; */
+}
+
+.header-title {
+  margin-block-start: 40px;
+  padding-block-start: 32px;
+  padding-block-end: 32px;
+  padding-inline-start: 24px;
+  padding-inline-end: 24px;
+}
+
+.header-title h1 {
+  margin-block-start: 32px;
+  font: var(--headline1);
+}
+
+.header .social-link {
+  display: none;
+}
+
+.header .slider {
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .header {
+    background-position: center;
+  }
+  .header-nav {
+    margin-inline-start: 80px;
+    margin-inline-end: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-content {
+    margin-inline-start: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  .header-title h1 {
+    margin-inline-start: 130px;
+    font: var(--body1bold);
+  }
+  .header-title img {
+    margin-inline-start: 120px;
+    color: var(--dark);
+  }
+  .header-content .social-link {
+    align-items: center;
+    align-self: center;
+    display: block;
+  }
+  .social-link {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .instagram img {
+    block-size: 36px;
+    inline-size: 36px;
+    opacity: 0.7;
+  }
+  .instagram img:hover {
+    opacity: 1;
+  }
+  .twitter img {
+    width: 36px;
+    height: 36px;
+    opacity: 0.7;
+  }
+  .twitter img:hover {
+    opacity: 1;
+  }
+  .header-content .slider {
+    display: block;
+  }
+  .slider img {
+    background-size: cover;
+    margin-block-start: 60px;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .header-title h1 {
+    font: var(--headline2);
+  }
+  .header-nav {
+    gap: 40px;
+  }
+  .header-content {
+    margin-inline-start: 150px;
+    display: flex;
+    flex-direction: row;
+  }
+  .slider img {
+    width: 300px;
+    height: 350px;
+    background-size: cover;
+  }
 }

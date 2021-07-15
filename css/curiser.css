@@ -1,0 +1,13 @@
+/* .cruiser {
+  position: absolute;
+  background: transparent;
+  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+  min-inline-size: 360px;
+  margin-block-start: 480px;
+  border: 1px solid red;
+  block-size: 700px;
+} */
+
+.cruiser {
+  background-color: var(--dark);
+}

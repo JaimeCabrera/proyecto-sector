@@ -1,0 +1,19 @@
+.content {
+  /* position: absolute; */
+  margin-block-start: 152px;
+}
+
+.content-title {
+  padding-block-start: 32px;
+  padding-block-end: 32px;
+  padding-inline-start: 24px;
+  padding-inline-end: 24px;
+}
+
+.content-title h1 {
+  font: var(--headline1);
+}
+
+.content-title .icon-arrow {
+  background-image: url('../icons/arrow_downward_24px.svg');
+}
