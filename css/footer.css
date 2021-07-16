@@ -5,8 +5,15 @@
   margin-block-end: 88px;
   padding-inline-start: 24px;
   padding-inline-end: 24px;
+}
+
+.footer-content {
   display: flex;
   flex-direction: column;
+}
+
+.footer-copyright {
+  margin-block-start: 24px;
 }
 
 .footer-content p {
@@ -29,6 +36,7 @@
   display: flex;
   flex-direction: column;
   margin-block-start: 24px;
+  padding: 0;
   gap: 16px;
 }
 
@@ -40,4 +48,17 @@
   text-decoration: none;
   color: var(--white);
   font: var(--body1medium);
+}
+
+@media screen and (min-width:768px) {
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-inline-start: 48px;
+    margin-inline-end: 48px;
+  }
+  .footer-service {
+    margin-inline-start: 150px;
+  }
 }

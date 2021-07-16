@@ -17,7 +17,7 @@
   margin-block-start: -225px;
 }
 
-.cruiser-content h2 {
+.cruiser-details h2 {
   position: relative;
   margin-block-start: -30px;
   color: var(--white);
@@ -25,11 +25,11 @@
   font: var(--headline1);
 }
 
-.cruiser-content img {
+.cruiser-details img {
   margin-block-start: 30px;
 }
 
-.cruiser-content p {
+.cruiser-details p {
   color: var(--white);
   font: var(--navfont);
 }
@@ -56,4 +56,47 @@
 .show-more img {
   margin: 0;
   align-self: center;
+}
+
+@media screen and (min-width:768px) {
+  .cruiser-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-inline-start: 50px;
+    margin-inline-end: 50px;
+  }
+  /* .project:nth-child(odd) .project-img {
+    order: 2;
+    flex: 1;
+    text-align: center;
+  } */
+  .cruiser:nth-child(odd) .cruiser-img {
+    order: 1;
+    text-align: end;
+  }
+  .cruiser-img {
+    margin-block-start: 0;
+  }
+  .cruiser-details {
+    position: relative;
+    padding-inline-start: 50px;
+    min-inline-size: 400px;
+    padding-inline-end: 50px;
+  }
+  .cruiser-details h2 {
+    font: var(--headline4);
+    margin-block-start: -90px;
+    margin-inline-start: 100px;
+  }
+  .show-more {
+    margin-inline-start: 100px;
+  }
+  .cruiser-details p {
+    margin-inline-start: 100px;
+  }
+  .cruiser-details img:first-child {
+    width: 150px;
+    height: 150px;
+  }
 }
